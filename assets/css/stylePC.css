@@ -1,0 +1,354 @@
+:root {
+  --dark-bg-font: #fff;
+  --light-bg-font: #000;
+
+  --gold-color: rgb(255, 230, 0);
+  --blue-color: #5da6ff;
+  --navy-blue-color: #184274;
+  --font-lato: "Lato", sans-serif;
+  --font-cardo: "Cardo", Sans-serif;
+  --border-lines-gray: #424242;
+  --border-lines-lightGray: rgb(165, 165, 165);
+}
+
+@media screen and (min-width: 1920px) {
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 45px;
+  }
+
+  /* !NAV BAR SECTION  */
+
+  #ham_menu {
+    display: none;
+  }
+
+  #navbar_itemsPC {
+    flex-direction: row;
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    color: white;
+  }
+
+  #navbar_itemsPC li a {
+    font-family: var(--font-lato);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: color ease-in-out 0.3s;
+
+    display: flex;
+    gap: 5px;
+  }
+
+  .submenu {
+    margin-top: 0px;
+    position: absolute;
+    z-index: 1;
+    max-width: max-content;
+    min-width: max-content;
+  }
+
+  .PMSel:hover .submenu {
+    display: inline-block !important;
+  }
+  
+  #navbar_itemsPC li a:visited {
+    color: white;
+  }
+
+  #navbar_itemsPC li a:hover {
+    color: var(--blue-color);
+  }
+
+  #PM_listPC ul li:hover {
+    color: var(--blue-color);
+  }
+
+  .active {
+    color: var(--blue-color);
+  }
+
+  #number {
+    animation: scroll 30s linear infinite;
+
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(325%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  /* !NAV BAR SECTION  */
+
+  /* ! HERO SECTION  */
+  #hero_sec {
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  /* ! HERO SECTION  */
+
+  #gold_guide_count {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  #gold_guide_count>* {
+    flex: 1;
+  }
+
+
+  /* ! WE ARE SECTION */
+  #we_are_sec {
+    display: flex;
+  }
+
+  #img_ctn {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+  }
+
+  #background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  /* ! WE ARE SECTION */
+
+  /* ! TESTIMONIALS SECTION */
+
+  #test_info_content {
+    width: 785px;
+    margin: auto;
+  }
+
+  #test_info {
+    gap: 30px;
+  }
+
+  #testimonials_sec h3 {
+    text-align: center;
+    color: var(--navy-blue-color);
+    margin-top: 1rem;
+  }
+
+  #test_icons {
+    display: flex;
+    align-content: center;
+    gap: 20px 120px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #btn_ctn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+  }
+
+  .scrollable-container {
+    flex-wrap: nowrap;
+    width: 1326px;
+    margin: auto;
+    
+  }
+
+  .f-carousel {
+    --f-carousel-slide-width: calc(100% / 3) !important;
+  }
+
+  .review_sec {
+
+  }
+
+  #review_comment {
+    font-family: var(--font-lato);
+    font-size: 16px;
+    width: 400px;
+  
+  }
+  /* ! TESTIMONIALS SECTION */
+
+  #gold_guide_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .gold_guide_titles {
+    width: 55%;
+  }
+  /* ! GOLD GUIDE 2 */
+
+  /*  ! PRECIOUS METALS GUIDE SECTION  */
+  .gold_guide_titles{ 
+  }
+  
+  .sec_2 {
+    margin: auto;
+  }
+
+  .numbering_guide{
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .guide_ctn{
+    width: 50%;
+    justify-content: center;
+  }
+
+  .card_viewer {
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+  }
+
+  .card_ctn img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+
+  #buy_back_ctn {
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 80%;
+    margin: auto;
+  }
+
+  #buy_back_info_ctn h3 {
+    font-size: 45px;
+  }
+  
+  #buy_back_info_ctn h3 span {
+    font-size: 45px;
+  }
+  
+  /*  ! PRECIOUS METALS GUIDE SECTION  */
+  /*  ! CURRENT NEWS GUIDE SECTION  */
+  #current_news_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+
+    margin: auto;
+  
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  #current_news_info{
+    width: 75%;
+    text-wrap: balance;
+  }
+
+
+  #current_news_info h3 {
+    color: var(--navy-blue-color);
+    text-wrap: balance;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+
+#as_seen_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+  #icon_ctn {
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); */
+    gap: 10px;
+    width: 80%;
+  }
+
+  .hero_icon {
+    margin: auto;
+  }
+
+  #icon_ctn img {
+    max-width: 100%;
+  }
+
+  /*  ! CURRENT NEWS GUIDE SECTION  */
+  /*  ! CURRENT NEWS GUIDE SECTION  */
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    /* justify-content: center; */
+    gap: 20px 100px;
+    font-size: 16px;
+
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+    padding-inline-start: 15%;
+    padding-inline-end: 15%;
+  }
+
+  .block_1{
+    width: 30%;
+  }
+
+  .rights_reserved {
+    width: 100% !important;
+    padding-block-start: 3%;
+    text-align: left;
+  }
+
+  .tp-block {
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* ! PRECIOUS METALS  */
+  .precious_content_ctn{
+    max-width: 1326px;
+  }
+
+  .precious_content h1 {
+    font-size: 40px;
+  }
+
+  /* ! PRECIOUS METALS  */
+}
